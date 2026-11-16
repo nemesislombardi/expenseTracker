@@ -27,7 +27,9 @@ def validateAmount(amount):
 
 
     if amount <= 0:
-        print()
+        invalidExpense("Amount cannot be 0 or lower!")
+
+    return amount
 
 
         
