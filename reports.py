@@ -10,10 +10,10 @@ def totalExpense():
     total = 0
 
     for x in expenses:
-        amount = x['amout']
+        amount = x['amount']
         total += amount
 
-        print("Total amount; ", total)
+    print("Total amount; ", total)
 
 
 def exportToCsv():

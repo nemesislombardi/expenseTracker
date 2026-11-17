@@ -100,6 +100,10 @@ def startApp():
                 searchExpense(expenseID)
                 input("\nPress ENTER to continue...")
 
+            elif choice == 6:
+                totalExpense()
+                input("\nPress ENTER to continue...")
+
 
             elif choice == 0:
                 print("Closing..")
