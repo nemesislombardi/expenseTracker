@@ -88,6 +88,12 @@ def startApp():
 
                 input("\nPress ENTER to continue...")
 
+            elif choice == 4:
+                expenseID = input("Enter expense ID; ")
+
+                deleteExpense(expenseID)
+                input("\nPress ENTER to continue...")
+
 
             elif choice == 0:
                 print("Closing..")
