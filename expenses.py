@@ -39,6 +39,8 @@ def searchExpense(expenseID):
             print(f"Amount; {x['amount']}")
             print(f"Catagory; {x['catagory']}")
             print(f"Date; {x['date']}")
+            
+            return
 
     print(expensesNotFound())
 

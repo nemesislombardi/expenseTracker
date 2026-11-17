@@ -94,6 +94,12 @@ def startApp():
                 deleteExpense(expenseID)
                 input("\nPress ENTER to continue...")
 
+            elif choice == 5:
+                expenseID = input("Enter expense ID; ")
+
+                searchExpense(expenseID)
+                input("\nPress ENTER to continue...")
+
 
             elif choice == 0:
                 print("Closing..")
