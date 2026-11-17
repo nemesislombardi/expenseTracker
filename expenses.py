@@ -17,8 +17,10 @@ def addExpense(title, amount, catagory):
     }
 
     expenses.append(expense)
+    saveExpense(expenses)
+
     print("Expense succsesfuly added.")
-    print(f"Expense id: {"id"}")
+    print(f"Expense id: {expense['id']}")
 
     return expense
 
@@ -49,7 +51,8 @@ def updateExpense(expenseID, title, amount, catagory):
             x["amount"] = validateAmount(amount)
             x["catagory"] = validateCatagory(catagory)
 
-            saveExpense()
+            saveExpense(expenses)
+            return "Succsesfuly updated."
 
     expensesNotFound()
 

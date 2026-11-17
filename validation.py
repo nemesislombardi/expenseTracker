@@ -2,19 +2,19 @@ from exceptions import *
 
 
 catagories = {
-    "Food"
-    "Shoping"
-    "Education"
-    "Health"
-    "Entertainment"
-    "Other"
+    "food",
+    "shoping",
+    "education",
+    "health",
+    "entertainment",
+    "other"
 }
 
 def validateTitle(title):
     title = title.strip()
 
     if not title:
-        print("Tittle cannot me empty")
+        invalidExpense("Title cannot be empty!")
 
     return title
 
@@ -39,4 +39,3 @@ def validateCatagory(catagory):
         invalidExpense("Invalid Catagory!")
 
     return catagory
-        
