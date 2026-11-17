@@ -1,5 +1,6 @@
 from expenses import *
 from validation import *
+from storage import*
 from reports import *
 
 def showMenu():
@@ -104,6 +105,28 @@ def startApp():
                 totalExpense()
                 input("\nPress ENTER to continue...")
 
+            elif choice == 7:
+                print("""
+                    ----- Expense Catagories  -----
+
+                    Food
+                    Shoping
+                    Education
+                    Health
+                    Entertainment
+                    Other
+
+                    ------------------------------------
+                """)
+                input("\nPress ENTER to continue...")
+
+            elif choice == 8:
+                exportToCsv()
+                print("Data succsefuly exported to CSV")
+                input("\nPress ENTER to continue...")
+
+
+                
 
             elif choice == 0:
                 print("Closing..")

@@ -21,7 +21,7 @@ def exportToCsv():
 
     try:
         with open(dataFile, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, newfile="", FieldNames=FieldNames)
+            writer = csv.DictWriter(f, fieldnames=FieldNames)
             writer.writeheader()
             writer.writerows(expenses)
 
